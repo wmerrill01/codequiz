@@ -8,17 +8,62 @@
     <title>JS Code Quiz</title>
 </head>
 <body>
+    <header>
+        
+        <h2>Time Left: <span id="timer"></span></h2>
+
+    </header>
+    <div id="start">
+
+        <button type="button" id="startButton">Start quiz</button>
+
+    </div>
+
+
+    <div id="quiz-area">
+        <p id = "questionTop"></p>    
+
+        <div>
+            <p><button id="btn0"></button></p>
+            <p><button id="btn1"></button></p>
+            <p><button id="btn2"></button></p>
+            <p><button id="btn3"></button></p>
+            <br>
+            <p id="answerCheck"></p>
+        </div>
+
+    </div>
+
+    <div id="summary" style="display: none;">
+        <h3>Final score: <span id ="finalScore"></span> !</h3>
+        <form>
+            <p>Enter your initials: <input id="initialInput" class="form-control pt-2 pb-3 mt-2" type="text">
+            <button type="submit" id="submitInitialBtn" class="btn btn-info mt-3">Submit</button>
+            </p>
+        </form>
+    </div>
+
+    <div id="highScoreSection" class="justify-content-center; font-weight-bold" style="display: none;">
+        <h2 class="font-weight-bold">High Scores</h2>                   
+        
+        <div id="listOfHighScores" ></div>
+
+        <p>
+            <button type="submit" id="goBackBtn">Go Back</button>
+            <button type="submit" id="clearHighScoreBtn">Clear High Scores</button>
+        </p>
+        
+    </div
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     
-
-
-
-
-
-
-
-
-
-
     <script src="../script.js"></script>
 </body>
 </html>
