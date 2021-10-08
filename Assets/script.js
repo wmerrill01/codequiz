@@ -142,7 +142,7 @@ function checkAnswer(correctAnswer) {
         answerCheck.textContent ="Correct! You get 1 point!";
 
     } else {
-        timeLeft -= 5;
+        timeLeft --;
         timeLeft.textContent = timeLeft;
         answerCheck.textContent ="Wrong. The correct answer is: " + questions[questionIndex].correctAnswer;
     }
